@@ -1,0 +1,434 @@
+.attract-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4b0082;
+  position: relative;
+}
+.btn-see-more {
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+  color: #fff;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-see-more:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 105, 135, 0.4);
+  color: #fff;
+}
+
+.top-attractions {
+  background: #f7faff;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+.filter-tabs .filter-btn,
+.filter-tabs .filter-btn-r {
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: #4b0082;
+  font-size: 1.1rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+.filter-tabs .filter-btn.active::after,
+.filter-tabs .filter-btn-r.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.attraction-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+.attraction-card:hover {
+  transform: translateY(-8px);
+}
+.attraction-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+.card-body h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #ff6636, #ffb84c);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+}
+.carousel-btn:hover {
+  background: #0056b3;
+}
+.prev-btn {
+  left: -10px;
+}
+.next-btn {
+  right: -10px;
+}
+.carousel-btn.hidden {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .attraction-card {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .attraction-card {
+    flex: 0 0 100%;
+  }
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(
+      135deg,
+      rgba(35, 0, 50, 0.8),
+      rgba(15, 0, 20, 0.9)
+    ),
+    url("../img/20.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 140px 20px 100px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.566);
+  overflow: hidden;
+}
+@keyframes glowPulse {
+  from {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ff4d9e, #d86aff, #ff7c60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255, 150, 220, 0.3);
+  position: relative;
+  z-index: 2;
+  animation: fadeUp 1.2s ease-out forwards;
+}
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #e5d8ff;
+  margin-top: 15px;
+  z-index: 2;
+  animation: fadeUp 1.8s ease-out forwards;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .hero-section {
+    padding: 100px 15px 80px;
+  }
+}
+
+.animate-title {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ffd93d, #ff8c00, #ff4081);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+.cta-button {
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+  border: none;
+  border-radius: 50px;
+  padding: 15px 45px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(255, 128, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+.cta-button:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 0 50px rgba(255, 105, 180, 0.8);
+}
+
+@media (max-width: 768px) {
+  .animate-title {
+    font-size: 2.3rem;
+  }
+  .animate-subtitle {
+    font-size: 1rem;
+  }
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+.prev-btn-r,
+.next-btn-r {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 60;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(135deg, #ff6636, #ffb84c);
+  color: #fff;
+  border: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.prev-btn-r:hover,
+.next-btn-r:hover {
+  transform: translateY(-50%) scale(1.06);
+  box-shadow: 0 12px 30px rgba(255, 160, 60, 0.25);
+}
+.prev-btn-r {
+  left: -20px;
+}
+.next-btn-r {
+  right: -20px;
+}
+.carousel-btn.hidden {
+  display: none !important;
+}
+
+#rides-carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.2, 1);
+  align-items: stretch;
+  will-change: transform;
+}
+#rides-carousel .attraction-card {
+  flex: 0 0 calc(33.333% - 13.33px);
+}
+
+@media (max-width: 992px) {
+  #rides-carousel .attraction-card {
+    flex: 0 0 calc(50% - 10px);
+  }
+  .prev-btn-r,
+  .next-btn-r {
+    width: 44px;
+    height: 44px;
+    left: -12px;
+    right: -12px;
+  }
+}
+@media (max-width: 600px) {
+  #rides-carousel .attraction-card {
+    flex: 0 0 100%;
+  }
+  .prev-btn-r,
+  .next-btn-r {
+    top: auto;
+    bottom: 12px;
+    transform: none;
+    width: 40px;
+    height: 40px;
+  }
+  .prev-btn-r {
+    left: 14px;
+  }
+  .next-btn-r {
+    right: 14px;
+  }
+}
+
+.filter-tabs .filter-btn-r {
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: #4b0082;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.filter-tabs .filter-btn-r:hover {
+  color: #ff4081;
+}
+.filter-tabs .filter-btn-r.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+}
+
+.position-relative {
+  position: relative;
+  z-index: 1;
+}
+.prev-btn-r i,
+.next-btn-r i {
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #4b0082;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.about-park {
+  background: #fff7ff;
+}
+.about-park img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dining-section {
+  background: linear-gradient(180deg, #fff, #fff0f6);
+}
+.dining-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dining-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials {
+  background: #f9f9ff;
+}
+.review-card {
+  background: #fff;
+  border-left: 5px solid #ff4081;
+  transition: all 0.3s ease;
+}
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-booking {
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+  color: #fff;
+  padding: 100px 20px;
+  box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.15);
+}
+.cta-booking h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.cta-booking p {
+  font-size: 1.1rem;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -5px;
+  border-radius: 12px;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(5px); }
+  to { opacity: 1; transform: translateX(0); }
+}

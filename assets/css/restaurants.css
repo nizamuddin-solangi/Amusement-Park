@@ -1,0 +1,180 @@
+.zones-section {
+  background: linear-gradient(180deg, #fff8f0 0%, #ffe5f7 100%);
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+.zones-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #4b0082;
+  text-shadow: 0 3px 10px rgba(255, 99, 177, 0.3);
+}
+
+.sub-zones-nav {
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.sub-zones-link {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #4b0082;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.sub-zones-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.sub-zones-link:hover {
+  color: #ff4081;
+}
+
+.sub-zones-link:hover::after {
+  width: 100%;
+}
+
+.sub-zones-link.active {
+  color: #ff4081;
+}
+
+.sub-zones-link.active::after {
+  width: 100%;
+}
+
+.zone-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.zone-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(255, 105, 135, 0.3);
+}
+
+.zone-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.zone-card .card-body {
+  padding: 20px;
+}
+
+.zone-card h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4b0082;
+}
+
+.zone-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.badge-category {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 30px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .zones-title {
+    font-size: 2.2rem;
+  }
+}
+.zones-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.zones-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #4b0082;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.zones-link:hover {
+  color: #ff4081;
+  border-color: #ff4081;
+  background: rgba(255, 64, 129, 0.1);
+}
+
+.zones-link.active {
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 105, 135, 0.3);
+}
+.restaurant-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.restaurant-info li {
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.zone-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.zone-card:hover {
+  transform: translateY(-5px);
+}
+
+.zone-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.badge-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff6f00;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}

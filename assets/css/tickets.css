@@ -1,0 +1,288 @@
+.tickets-section {
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+  padding: 120px 0 80px;
+  font-family: "Poppins", serif;
+}
+
+.tickets-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #4b0082;
+  margin-bottom: 10px;
+}
+
+.tickets-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.ticket-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(255, 64, 129, 0.3);
+}
+
+.ticket-card h3 {
+  color: #ff4081;
+  font-weight: 700;
+}
+
+.ticket-desc {
+  color: #444;
+  font-size: 0.95rem;
+  margin: 15px 0 20px;
+}
+
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.price-list li {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.book-btn {
+  background: linear-gradient(90deg, #ff7a00, #ff4081);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+}
+
+.ribbon {
+  position: absolute;
+  top: 15px;
+  right: -10px;
+  background: #ff4081;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  border-radius: 0 10px 10px 0;
+  font-weight: 600;
+}
+
+.notice-box {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 20px;
+  border-left: 5px solid #ff7a00;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.booking-modal {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  border: none;
+  background: linear-gradient(90deg, #ff7a00, #ff4081);
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.submit-btn {
+  background-color: #4b0082;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #5c0da3;
+}
+.tickets-section {
+  background: #fafafa;
+  padding: 100px 0 80px;
+}
+
+.ticket-card {
+  min-height: 420px;
+}
+
+.ticket-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.notice-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  border-left: 4px solid #ff7a00;
+  margin-top: 60px;
+}
+
+.notice-box h5 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.notice-box ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.notice-box li {
+  margin-bottom: 6px;
+}
+.booking-modal {
+  padding: 10px;
+}
+
+.booking-modal .modal-body {
+  background: #fff;
+}
+
+.booking-modal h6 {
+  color: #333;
+  font-weight: 600;
+}
+
+.error-msg {
+  font-size: 0.85rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.modal {
+  overflow: hidden !important;
+}
+
+.modal-open {
+  overflow: hidden !important;
+  padding-right: 0 !important;
+}
+
+.modal-dialog-scrollable .modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(3px);
+}
+
+.modal-dialog {
+  max-width: 850px;
+}
+
+.booking-modal {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  border: none;
+  background: linear-gradient(90deg, #ff7a00, #ff4081);
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.modal-body {
+  overflow: hidden !important;
+}
+
+.buy-btn {
+  background: linear-gradient(90deg, #ff7a00, #ff4081);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+}
+
+#loginRequiredModal .modal-content {
+  border-radius: 20px;
+  padding: 28px;
+  background: linear-gradient(135deg, #ffb703, #fb8500);
+  border: none;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+}
+
+#loginRequiredModal .modal-icon {
+  font-size: 55px;
+  margin-bottom: 12px;
+  animation: pop .4s ease-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  70% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+#loginRequiredModal .btn-theme {
+  background: #023047;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 8px 18px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+#loginRequiredModal .btn-theme:hover {
+  background: #035180;
+}
+
+#loginRequiredModal .btn-outline-dark {
+  border-radius: 8px;
+  padding: 8px 18px;
+  color: #222 !important;
+  background: #fff;
+  border: none;
+}
+
+#loginRequiredModal .btn-outline-dark:hover {
+  background: #f1f1f1;
+}
+

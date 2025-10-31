@@ -1,0 +1,63 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.disclaimer-hero {
+  min-height: 50vh;
+  background: linear-gradient(135deg, #ff8c00, #ff4081);
+  text-align: center;
+  color: #fff;
+  padding: 120px 20px 80px;
+}
+.disclaimer-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.disclaimer-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.disclaimer-content {
+  background-color: #fdfdfd;
+}
+.content-box {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+}
+.text-gradient {
+  background: linear-gradient(90deg, #ff8c00, #ff4081);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content-box p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.text-gradient:hover {
+  background: linear-gradient(90deg, #ff4081, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .disclaimer-hero h1 {
+    font-size: 2.3rem;
+  }
+  .disclaimer-hero p {
+    font-size: 1rem;
+  }
+  .content-box {
+    padding: 1.5rem;
+  }
+}

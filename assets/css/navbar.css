@@ -1,0 +1,170 @@
+.navbar-custom {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  padding: 15px 30px;
+  border-radius: 50px;
+  z-index: 1030;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-custom > .container-fluid {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo-floating {
+  position: absolute;
+  left: -90px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1040;
+}
+.logo-desktop {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-mobile {
+  width: 75px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+  justify-content: center !important;
+  text-align: center;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.navbar-nav .nav-link {
+  font: 500 20px "Poppins", serif;
+  color: #222 !important;
+  padding: 0.35rem 0.5rem;
+  transition: 0.18s;
+  font-weight: 520;
+}
+.navbar-nav .nav-link:hover {
+  color: #ff7a00 !important;
+  transform: translateY(-2px);
+}
+
+.btn-buy-tickets {
+  background: linear-gradient(90deg, #ff7a00, #ff4081);
+  color: #fff !important;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(255, 100, 50, 0.25);
+  text-decoration: none;
+}
+.btn-buy-tickets:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+.dropdown-menu {
+  border-radius: 12px;
+  min-width: 200px;
+  border: none;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.dropdown-item {
+  font: 500 18px "Poppins", serif;
+  padding: 10px 20px;
+  color: #222;
+}
+.dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: #ff7a00 !important;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 0.25rem;
+  min-width: 200px;
+  z-index: 2000;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .logo-floating {
+    display: none !important;
+  } 
+  .navbar-custom {
+    position: static;
+    width: 100%;
+    transform: none;
+    border-radius: 0;
+    padding: 12px 16px;
+  }
+  .dropdown-submenu > .dropdown-menu {
+    position: static;
+    display: none;
+    margin-left: 0;
+    padding-left: 12px;
+    background: rgba(255, 255, 255, 0.98);
+  }
+  .navbar-collapse.show {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 12px;
+    border-radius: 0;
+  }
+  .navbar-collapse.show .btn-buy-tickets {
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+}
+
+.dropdown-submenu.open > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -5px;
+  border-radius: 12px;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(5px); }
+  to { opacity: 1; transform: translateX(0); }
+}
